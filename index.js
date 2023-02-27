@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-//const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 /* const questions = () =>  */
@@ -12,15 +12,17 @@ inquirer.prompt ([
     message: 'What is your project title?'
     },
     {
+        type: 'checkbox',
+        name: 'contents',
+        message: 'Please select your readme segments',
+        choices: ['contents', 'description', 'installation', 'usage', 'license', 'contributions', 'tests', 'questions']
+        },
+    {
     type: 'input',
     name: 'description',
     message: 'Please write your project description'
         },
-    {
-    type: 'input',
-    name: 'contents',
-    message: 'Please write your table of contents'
-    },
+  
     {
      type: 'input',
     name: 'installation',
@@ -49,8 +51,18 @@ inquirer.prompt ([
     },
     {
     type: 'input',
-    name: 'questions',
-    message: 'Please advise questions'
+    name: 'github',
+    message: 'What is your github user name and link?',
+    },
+    {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email?'
+    },
+    {
+    type: 'input',
+    name: 'linkedIn',
+    message: 'What is your linkedIn?'
     },
 
 
@@ -59,7 +71,8 @@ inquirer.prompt ([
 
 ])
 .then((response) => { console.log(response);
-fs.writeFile(`${response.title}.md`, JSON.stringify(response), (error) => {
+    const markdownTemplate = generateMarkdown(response)
+fs.writeFile(`${response.title}.md`, /* JSON.stringify(response) */markdownTemplate, (error) => {
     return error
     ? console.error(error)
     : console.log('Your file was written successfully')
