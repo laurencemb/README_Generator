@@ -1,4 +1,4 @@
-# Frogify
+# Froggly
 ---------------------------------------------------------
 
 ______________________________________________________________
@@ -20,17 +20,17 @@ TABLE OF CONTENTS
 ______________________________________________________________
 DESCRIPTION (#description)
 --------------------------------------------------------------
-# A website which helps you to identify frogs, discover facts about them and build up an encyclopaedia of frog knowledge to share with all your friends. 
+# A website which helps you identify frogs and save facts about them
 ______________________________________________________________
 ______________________________________________________________
 INSTALLATION (#installation)
 --------------------------------------------------------------
-# No install required, simply use in the browser
+# none, use in browser
 ______________________________________________________________
 ______________________________________________________________
 USAGE (#usage)
 --------------------------------------------------------------
-# Find frogs, make friends
+# search frogs, make friends
 ______________________________________________________________
 ______________________________________________________________
 LICENSE (#license)
@@ -40,12 +40,12 @@ ______________________________________________________________
 ______________________________________________________________
 CONTRIBUTIONS (#contributions)
 --------------------------------------------------------------
-# Built by laurencemb, Using bootstrap Npm, node
+# built by laurencemb using bootstrap, node and npm
 ______________________________________________________________
 ______________________________________________________________
 TESTS (#tests)
 --------------------------------------------------------------
-# This site has been tested
+# this site has been tested
 ______________________________________________________________
 ______________________________________________________________
 QUESTIONS (#questions)
@@ -54,7 +54,7 @@ If you have further qestions you can reach me at:
 
 
 
-# github username github.link
+# github username, git hub link
 # email@email.net
 # mynamelinkedin.com
 ______________________________________________________________
