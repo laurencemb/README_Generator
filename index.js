@@ -37,7 +37,18 @@ inquirer.prompt ([
     type: 'checkbox',
     name: 'license',
     message: 'Please select your license',
-    choices: ['MIT', 'Academic Free License v3.0', 'Creative Commons license', 'ISC']
+    choices: ['MIT', 'IPL', 'CC license', 'ISC']
+    },
+    {
+    type: 'checkbox',
+    name: 'licenseImage',
+    message: 'Please select Url for correct license badge',
+    choices: [
+            '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
+            '[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)',
+            '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)',
+            '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
+]
     },
     {
     type: 'input',
@@ -72,13 +83,29 @@ inquirer.prompt ([
 ])
 .then((response) => { console.log(response);
     const markdownTemplate = generateMarkdown(response)
-fs.writeFile(`${response.title}.md`, /* JSON.stringify(response) */markdownTemplate, (error) => {
+fs.writeFile(`${response.title}.md`, markdownTemplate, (error) => {
     return error
     ? console.error(error)
     : console.log('Your file was written successfully')
 });
 
+
 });
+
+function getBadge(license) {
+    switch (license){
+case 'MIT':
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    case 'Creative Commons license':
+        return '[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)'
+case 'ISC':
+        return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
+case 'IBM':
+    return '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
+}
+}
+
+
 
 // function to write README file
 /* function writeToFile(fileName, data) {

@@ -1,48 +1,64 @@
-# qwerty
+# Frogify
 ---------------------------------------------------------
 
 ______________________________________________________________
-DESCRIPTION
---------------------------------------------------------------
-# qwerty
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+______________________________________________________________
 ______________________________________________________________
 ______________________________________________________________
 TABLE OF CONTENTS
 --------------------------------------------------------------
-# contents,description,installation,usage,license,contributions,tests,questions
+# contents 
+# [description](#description)
+# [installation](#installation)
+# [usage](#usage)
+# [license](#license)
+# [contributions](#contributions)
+# [tests](#tests)
+# [questions](#questions)
+
 ______________________________________________________________
-______________________________________________________________
-INSTALLATION
+DESCRIPTION (#description)
 --------------------------------------------------------------
-# qwerty
+# A website which helps you to identify frogs, discover facts about them and build up an encyclopaedia of frog knowledge to share with all your friends. 
 ______________________________________________________________
 ______________________________________________________________
-USAGE
+INSTALLATION (#installation)
 --------------------------------------------------------------
-# qwerty
+# No install required, simply use in the browser
 ______________________________________________________________
 ______________________________________________________________
-LICENSE
+USAGE (#usage)
+--------------------------------------------------------------
+# Find frogs, make friends
+______________________________________________________________
+______________________________________________________________
+LICENSE (#license)
 --------------------------------------------------------------
 # MIT
 ______________________________________________________________
 ______________________________________________________________
-CONTRIBUTIONS
+CONTRIBUTIONS (#contributions)
 --------------------------------------------------------------
-# qwerty
+# Built by laurencemb, Using bootstrap Npm, node
 ______________________________________________________________
 ______________________________________________________________
-TESTS
+TESTS (#tests)
 --------------------------------------------------------------
-# qwerty
+# This site has been tested
 ______________________________________________________________
 ______________________________________________________________
-QUESTIONS
+QUESTIONS (#questions)
 --------------------------------------------------------------
-# qwerty
+If you have further qestions you can reach me at:
+
+
+
+# github username github.link
+# email@email.net
+# mynamelinkedin.com
 ______________________________________________________________
 
 
 
-  
   
